@@ -9,7 +9,7 @@ NODE  | CPU     | RAM      | SSD     |
 
 ### Install otomatis
 ```
-wget -O mises.sh https://raw.githubusercontent.com/Whalealert/mises-mainnet/main/mises.sh && chmod +x mises.sh && ./mises.sh
+wget -O mises.sh https://raw.githubusercontent.com/an-node/NODE-MAINNET/main/Mises/mises.sh && chmod +x mises.sh && ./mises.sh
 ```
 ### Load variable ke system
 ```
