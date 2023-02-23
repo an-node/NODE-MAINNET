@@ -58,7 +58,6 @@ git checkout 1.0.4
 make build
 make install
 
-
 # config
 misestmd config chain-id $MISES_CHAIN_ID
 misestmd config keyring-backend test
