@@ -2,16 +2,16 @@
   <img width="300" height="auto" src="https://user-images.githubusercontent.com/108969749/203468600-bd337c5d-70b2-46bd-8a56-bcc001a447db.jpeg">
 </p>
 
-### Spesifikasi Hardware :
+### Minimum Hardware :
 NODE  | CPU     | RAM      | SSD     |
 | ------------- | ------------- | ------------- | -------- |
 | Mainnet | 4          | 32         | 1TB  |
 
-### Install otomatis
+### Auto Install
 ```
 wget -O mises.sh https://raw.githubusercontent.com/an-node/NODE-MAINNET/main/Mises/mises.sh && chmod +x mises.sh && ./mises.sh
 ```
-### Load variable ke system
+### Load Variable
 ```
 source $HOME/.bash_profile
 ```
@@ -33,47 +33,47 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.misestm/c
 
 sudo systemctl restart misestmd && sudo journalctl -u misestmd -f --no-hostname -o cat | grep chunk
 ```
-### Informasi node
+### Information Node
 
    * cek sync node
 ```
 misestmd status 2>&1 | jq .SyncInfo
 ```
-   * cek log node
+   * Check Log Node
 ```
 journalctl -fu misestmd -o cat
 ```
-   * cek node info
+   * Check Node Info
 ```
 misestmd status 2>&1 | jq .NodeInfo
 ```
-   * cek validator info
+   * Check validator Info
 ```
 misestmd status 2>&1 | jq .ValidatorInfo
 ```
-  * cek node id
+  * Check Node Id
 ```
 misestmd tendermint show-node-id
 ```
 
-### Membuat wallet
-   * wallet baru
+### Create Wallet
+   * New Wallet
 ```
 misestmd keys add $WALLET
 ```
-   * recover wallet
+   * Recover Wallet
 ```
 misestmd keys add $WALLET --recover
 ```
-   * list wallet
+   * List wallet
 ```
 misestmd keys list
 ```
-   * hapus wallet
+   * Delete Wallet
 ```
 misestmd keys delete $WALLET
 ```
-### Simpan informasi wallet
+### Save Wallet
 ```
 MISES_WALLET_ADDRESS=$(misestmd keys show $WALLET -a)
 MISES_VALOPER_ADDRESS=$(misestmd keys show $WALLET --bech val -a)
@@ -82,12 +82,12 @@ echo 'export MISES_VALOPER_ADDRESS='${MISES_VALOPER_ADDRESS} >> $HOME/.bash_prof
 source $HOME/.bash_profile
 ```
 
-### Membuat validator
- * cek balance
+### Create Validator
+ * Check Balance
 ```
 misestmd query bank balances $MISES_WALLET_ADDRESS
 ```
- * membuat validator
+ * Create Validator
 ```
 misestmd tx staking create-validator \
   --amount 1000000umis \
@@ -101,7 +101,7 @@ misestmd tx staking create-validator \
   --fees 250umis \
   --chain-id $MISES_CHAIN_ID
 ```
- * edit validator
+ * Edit Validator
 ```
 misestmd tx staking edit-validator \
   --moniker="nama-node" \
@@ -112,7 +112,7 @@ misestmd tx staking edit-validator \
   --fees 250umis \
   --from=$WALLET
 ```
- ° unjail validator
+ ° Unjail Validator
 ```
 misestmd tx slashing unjail \
   --broadcast-mode=block \
@@ -124,21 +124,21 @@ misestmd tx slashing unjail \
 ```
 misestmd tx gov vote 1 yes --from $WALLET --chain-id=$MISES_CHAIN_ID
 ```
-### Delegasi dan Rewards
-  * delegasi
+### Delegate & Rewards
+  * Delegate
 ```
 misestmd tx staking delegate $MISES_VALOPER_ADDRESS 1000000umis --from=$WALLET --chain-id=MISES_CHAIN_ID --fees=250umis
 ```
-  * withdraw reward
+  * Withdraw Reward
 ```
 misestmd tx distribution withdraw-all-rewards --from=$WALLET --chain-id=$MISES_CHAIN_ID --fees=250umis
 ```
-  * withdraw reward beserta komisi
+  * Withdraw Reward & Commission
 ```
 misestmd tx distribution withdraw-rewards $MISES_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$MISES_CHAIN_ID
 ```
 
-### Hapus node
+### Delete Node
 ```
 sudo systemctl stop misestmd && \
 sudo systemctl disable misestmd && \
