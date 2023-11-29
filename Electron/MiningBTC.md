@@ -48,10 +48,15 @@ sudo npm install -g yarn
 ```
 yarn install
 ```
-# Run Project
+# Create Wallet
 ```
 yarn cli wallet-init
 ```
+# Run Project
+```
+yarn cli mint-dft electron --satsbyte 50
+```
+
 # NOTE : 
 - [SAVE] Find Folder : atomical-js > file wallet.json > save > Download to PC
 - [Wallet] Import Pharse Wallet BTC in : https://atomicalswallet.com
