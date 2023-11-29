@@ -90,8 +90,8 @@ rm -rf atomicals-js
 sudo apt-get remove screen
 ```
 ```
-npm uninstall -g typescript 
+npm uninstall -g typescript -y
 ```
 ```
-npm uninstall -g yarn
+npm uninstall -g yarn -y
 ```
