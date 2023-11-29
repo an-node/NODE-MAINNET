@@ -58,30 +58,24 @@ Done
 - Back Sesion Screen : screen -r btc
 
 # Delete 
-Uninstall Git:
 ```
 sudo apt remove git
 ```
-Uninstall Node.js:
 ```
 sudo apt-get remove nodejs
 sudo rm /etc/apt/sources.list.d/nodesource.list
 sudo rm /etc/apt/keyrings/nodesource.gpg
 Remove the cloned Git repository:
 ```
-Remove the cloned Git repository:
 ```
 rm -rf atomicals-js
 ```
-Uninstall Screen:
 ```
 sudo apt-get remove screen
 ```
-Uninstall NPM and TypeScript:
 ```
 npm uninstall -g typescript
 ```
-Remove Yarn:
 ```
 npm uninstall -g yarn
 ```
