@@ -23,6 +23,8 @@ sudo apt-get install screen -y
 # Install NPM
 ```
 sudo apt-get install npm -y
+```
+```
 sudo npm install -g typescript
 ```
 # Clone Repository Git
@@ -32,7 +34,7 @@ cd atomicals-js
 ```
 # Create Sesion
 ```
-screen -r btc
+screen -S btc
 ```
 # Build Project
 ```
