@@ -51,7 +51,11 @@ Deposit BTC
 ```
 Done
 
-# NOTE : Find Folder : atomical-js > file wallet.json > save > Download to PC
+# NOTE : 
+- [SAVE] Find Folder : atomical-js > file wallet.json > save > Download to PC
+- [Wallet] Import Pharse Wallet BTC in : https://atomicalswallet.com
+- Exit Sesion Screen : CTRL A + D
+- Back Sesion Screen : screen -r btc
 
 # Delete 
 Uninstall Git:
