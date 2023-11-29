@@ -1,3 +1,15 @@
+<p align="center">
+  <img width="300" height="auto" src="https://user-images.githubusercontent.com/108969749/203468600-bd337c5d-70b2-46bd-8a56-bcc001a447db.jpeg">
+</p>
+
+![images](https://github.com/an-node/NODE-MAINNET/assets/96678356/c1e4377f-f056-4444-b5e7-6e13e9370725)
+
+### Minimum Hardware :
+NODE  | CPU     | RAM      | SSD     |
+| ------------- | ------------- | ------------- | -------- |
+| Mainnet | 6          | 16         | 400 GB  |
+
+
 # Install Git
 ```
 sudo apt install git
