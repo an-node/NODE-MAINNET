@@ -70,6 +70,10 @@ yarn cli wallet-init
 ```
 yarn cli mint-dft electron --satsbyte 50
 ```
+# Deposit BTC
+```
+Deposit BTC
+```
 
 # NOTE : 
 - [SAVE] Find Folder : atomical-js > file wallet.json > save > Download to PC
