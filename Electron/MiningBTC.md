@@ -1,6 +1,6 @@
-<p align="center">
+
 ![images](https://github.com/an-node/NODE-MAINNET/assets/96678356/c1e4377f-f056-4444-b5e7-6e13e9370725)
-</p>
+
 
 ### Minimum Hardware :
 NODE  | CPU     | RAM      | SSD     |
