@@ -74,6 +74,8 @@ yarn cli mint-dft electron --satsbyte 50
 ```
 Deposit BTC
 ```
+# DONE MINNING
+
 
 # NOTE : 
 - [SAVE] Find Folder : atomical-js > file wallet.json > save > Download to PC
