@@ -5,6 +5,8 @@ sudo apt install git
 # Install Node.js
 ```
 sudo apt-get update
+```
+```
 sudo apt-get install -y ca-certificates curl gnupg
 ```
 ```
@@ -14,6 +16,8 @@ echo "deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.
 ```
 ```
 sudo apt-get update
+```
+```
 sudo apt-get install nodejs -y
 ```
 # Install Screen
@@ -59,6 +63,9 @@ yarn cli mint-dft electron --satsbyte 50
 
 # NOTE : 
 - [SAVE] Find Folder : atomical-js > file wallet.json > save > Download to PC
+
+![Capture](https://github.com/an-node/NODE-MAINNET/assets/96678356/63706a0b-b560-4c6f-8be7-7c822a77ee3a)
+
 - [Wallet] Import Pharse Wallet BTC in : https://atomicalswallet.com
 - Exit Sesion Screen : CTRL A + D
 - Back Sesion Screen : screen -r btc
@@ -69,8 +76,14 @@ sudo apt remove git
 ```
 ```
 sudo apt-get remove nodejs
+```
+```
 sudo rm /etc/apt/sources.list.d/nodesource.list
+```
+```
 sudo rm /etc/apt/keyrings/nodesource.gpg
+```
+```
 Remove the cloned Git repository:
 ```
 ```
