@@ -84,16 +84,13 @@ sudo rm /etc/apt/sources.list.d/nodesource.list
 sudo rm /etc/apt/keyrings/nodesource.gpg
 ```
 ```
-Remove the cloned Git repository:
-```
-```
 rm -rf atomicals-js
 ```
 ```
 sudo apt-get remove screen
 ```
 ```
-npm uninstall -g typescript
+npm uninstall -g typescript 
 ```
 ```
 npm uninstall -g yarn
