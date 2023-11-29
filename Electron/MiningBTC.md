@@ -4,53 +4,52 @@ sudo apt install git
 ```
 # Install Node.js
 ```
-sudo apt-get update && sudo apt-get install -y ca-certificates curl gnupg
-curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
-NODE_MAJOR=20
-echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
-sudo apt-get update && sudo apt-get install nodejs -y
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg
 ```
-# Install Git
 ```
-git clone https://github.com/atomicals/atomicals-js.git
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource.gpg
+NODE_MAJOR=16
+echo "deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x focal main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+```
+```
+sudo apt-get update
+sudo apt-get install nodejs -y
 ```
 # Install Screen
 ```
 sudo apt-get install screen -y
 ```
-
 # Install NPM
 ```
-npm install -g typescript
+sudo apt-get install npm -y
+sudo npm install -g typescript
 ```
+# Clone Repository Git
 ```
+git clone https://github.com/atomicals/atomicals-js.git
 cd atomicals-js
 ```
+# Create Sesion
 ```
-screen -S btc
+screen -r btc
 ```
+# Build Project
 ```
 npm run build
 ```
+# Install Yarn
 ```
-npm install -g yarn
+sudo npm install -g yarn
 ```
+# Install Dependencies with Yarn
 ```
 yarn install
 ```
+# Run Project
 ```
 yarn cli wallet-init
 ```
-# SAVE Data Wallet
-```
-yarn cli mint-dft electron --satsbyte 50
-```
-# Deposit 
-```
-Deposit BTC
-```
-Done
-
 # NOTE : 
 - [SAVE] Find Folder : atomical-js > file wallet.json > save > Download to PC
 - [Wallet] Import Pharse Wallet BTC in : https://atomicalswallet.com
