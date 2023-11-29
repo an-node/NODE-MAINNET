@@ -72,10 +72,10 @@ yarn cli mint-dft electron --satsbyte 50
 
 # Delete 
 ```
-sudo apt remove git
+sudo apt remove git -y
 ```
 ```
-sudo apt-get remove nodejs
+sudo apt-get remove nodejs -y
 ```
 ```
 sudo rm /etc/apt/sources.list.d/nodesource.list
