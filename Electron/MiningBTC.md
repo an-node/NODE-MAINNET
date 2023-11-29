@@ -3,9 +3,9 @@
 
 
 ### Minimum Hardware :
-NODE  | CPU     | RAM      | SSD     |
+NODE  | CPU     | RAM      | SSD     | OS
 | ------------- | ------------- | ------------- | -------- |
-| Mainnet | 6          | 16         | 400 GB  |
+| Mainnet | 6          | 16         | 400 GB  | Ubuntu 20.04 LS
 
 
 # Install Git
