@@ -1,6 +1,6 @@
-# RaiblocksOne Mainnet
+# RaiblocksOne
 
-![logo](https://github.com/catsmile100/Validor-Mainnet/assets/85368621/e1097346-f60e-4404-a74a-878a7557ceff)
+![logo](https://github.com/an-node/NODE-MAINNET/assets/96678356/3225b278-c174-4ab5-a43e-16a0267cb56f)
 
 
 ### Documentation
